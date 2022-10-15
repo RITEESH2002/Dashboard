@@ -512,10 +512,6 @@ export const links = [
         name: 'editor',
         icon: <FiEdit />,
       },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
     ],
   },
   {
@@ -533,10 +529,6 @@ export const links = [
       {
         name: 'bar',
         icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
       },
       {
         name: 'financial',
@@ -707,23 +699,23 @@ export const recentTransactions = [
 export const weeklyStats = [
   {
     icon: <FiShoppingCart />,
-    amount: '-$560',
+    amount: '+$1560',
     title: 'Top Sales',
     desc: 'Johnathan Doe',
     iconBg: '#FB9678',
-    pcColor: 'red-600',
+    pcColor: 'green-600',
   },
   {
     icon: <FiStar />,
-    amount: '-$560',
+    amount: '+$3240',
     title: 'Best Seller',
     desc: 'MaterialPro Admin',
     iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'red-600',
+    pcColor: 'green-600',
   },
   {
     icon: <BsChatLeft />,
-    amount: '+$560',
+    amount: '+$360',
     title: 'Most Commented',
     desc: 'Ample Admin',
     iconBg: '#00C292',
@@ -2271,7 +2263,7 @@ export const ordersData = [
     CustomerName: 'Vinet',
 
     TotalAmount: 32.38,
-    OrderItems: 'Fresh Tomato',
+    OrderItems: 'a',
     Location: 'USA',
     Status: 'pending',
     StatusBg: '#FB9678',
@@ -3091,6 +3083,12 @@ export const SparklineAreaData = [
 
 ];
 
+export const SparklineAreaData1 = [
+  { x: 1, yval: 1560 },
+  { x: 2, yval: 3240 },
+  { x: 3, yval: 360 },
+];
+
 export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
@@ -3160,18 +3158,18 @@ export const stackedChartData = [
     { x: 'Feb', y: 127.3 },
     { x: 'Mar', y: 143.4 },
     { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
+    { x: 'May', y: 139.9 },
+    { x: 'Jun', y: 179.9 },
     { x: 'July', y: 159.9 },
   ],
   [
-    { x: 'Jan', y: 111.1 },
-    { x: 'Feb', y: 127.3 },
-    { x: 'Mar', y: 143.4 },
-    { x: 'Apr', y: 159.9 },
-    { x: 'May', y: 159.9 },
-    { x: 'Jun', y: 159.9 },
-    { x: 'July', y: 159.9 },
+    { x: 'Jan', y: 121.1 },
+    { x: 'Feb', y: 157.3 },
+    { x: 'Mar', y: 113.4 },
+    { x: 'Apr', y: 152.9 },
+    { x: 'May', y: 129.9 },
+    { x: 'Jun', y: 115.9 },
+    { x: 'July', y: 162.9 },
   ],
 ];
 
@@ -3183,7 +3181,6 @@ export const stackedCustomSeries = [
     name: 'Budget',
     type: 'StackingColumn',
     background: 'blue',
-
   },
 
   { dataSource: stackedChartData[1],
@@ -3210,7 +3207,7 @@ export const stackedPrimaryXAxis = {
 
 export const stackedPrimaryYAxis = {
   lineStyle: { width: 0 },
-  minimum: 100,
+  minimum: 0,
   maximum: 400,
   interval: 100,
   majorTickLines: { width: 0 },
